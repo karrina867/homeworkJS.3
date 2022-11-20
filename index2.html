@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*1. Пользователь вводит 10 чисел. Сохранить их
+         в массив. Затем
+вывести на печать только четные числа из массива и сам
+массив.*/
+        /*
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        for(let i = 0; i < 10; i++){
+            num[i]=prompt('введите число');
+            if(num[i] % 2 == 0){
+                console.log(num[i]);
+            }
+        }
+        */
+       /*2. Пользователь вводит 10 чисел. Сохранить 
+их в массив. Затем в новый массив перенести квадраты 
+чисел первого массива и вывести на печать оба массива.*/
+        /*
+        let num = [];
+        let num2 = [];
+        for(let i = 0; i < 10; i++){
+            num[i]=prompt('введите число');
+            num2[i] = num[i] * num[i];
+            console.log(num2[i]);
+        }
+        console.log(num);
+        */
+        /*3. Пользователь вводит 2 массива, состоящие
+ из 5 любых цифр.Машина должна определить равны ли
+  значения в этих массивах и вывести в консоль
+   соответствующее сообщение.*/
+        /*let first = [1, 2, 3, 4, 5];
+        let second = [1, 2, 3, 4, 5];
+        for(let i = 0; i < 5; i++ ){
+            first[i] = prompt('введите числа в 1 массив');
+        }
+        for(let i = 0; i < 5; i++ ){
+            second[i] = prompt('введите числа в 2 массив');
+        }
+        let check = true;
+        for (let i = 0; i < 5; i++ ){
+            if (first[i] != second[i] ){
+               check = false;
+               console.log('не равны')
+                break;
+            }
+        }
+        if (check == true) {
+            console.log('равны')
+        }*/
+        /*4. Спросить у пользователя, сколько чисел он
+ хочет ввести. Затем пользователь вводит эти числа. 
+Сохранить их в массив. Затем создать новый массив, в 
+котором числа будут находиться в обратном порядке.
+Вывести оба массива на печать.*/
+        /*
+        let y = prompt('введите количество чисел в массиве');
+        let massive = [];
+        massive.length = y;
+        
+        let massive2 = [];
+        for(let i = 0; i < y; i++ ){
+            massive.push(+prompt('введите числа в массив'));
+        }
+        massive2 = massive.slice(0)
+        massive2.reverse();
+        alert(massive2);
+        */
+        /*5. Машина генерирует столько случайных чисел (от 1 до 10), 
+сколько скажет пользователь. Сохранить их в массив. Затем 
+подсчитать сумму всех чисел массива и вывести ее и сам 
+массив в консоль на печать.
+*/  
+        /*
+        let mas = [];
+        let num = prompt('введите длину массива');
+        let num2 = 0;
+        for(let i = 0; i < num; i ++){
+            mas[i] = (Math.trunc(Math.random()*10)+1)
+            num2 = num2 + mas[i];
+        }
+        console.log(mas);
+        console.log(num2);
+        */
+        /*6. Машина генерирует 2 массива по 10 чисел (от 1 до 100) в 
+каждом. Необходимо создать 3-й массив, в который 
+поместить суммы элементов из обоих массивов. Распечатать 
+все 3 массива*/
+        /*
+        let mas = [];
+        let mas2 = [];
+        let mas3 = [];
+        let num = 0;
+        for(let i = 0; i < 10; i ++){
+            mas[i] = (Math.trunc(Math.random()*100)+1);
+            mas2[i] =(Math.trunc(Math.random()*100)+1);
+            num = mas[i] + mas2[i];
+            mas3[i] = num;
+        }
+        console.log(mas);
+        console.log(mas2);
+        console.log(mas3);
+        */
+    </script>
+</body>
+</html>
